@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-.containerBarraSuperior,
-footer{
+.containerBarraSuperior{
     background-color: #222222;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
     text-align: center;
 }
 
 .containerBarraPrincipal{
     background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a{
@@ -23,6 +35,9 @@ a{
 }
 
 .containerBanner{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     width: 100%;
     height: 545px;
     background-repeat: no-repeat;
@@ -31,24 +46,46 @@ a{
 }
 
 .containerBanner article{
-    float: right;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: fit-content;
 }
 
-button{
+.containerBanner h2 {
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.containerBanner button{
     background-color: #F0A83E;
-    color: #fff;
     border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 49px;
+    width: 141px;
 }
 
 .ContainerProductos{
     text-align: center;
+    padding: 10px;
+}
+
+.ContainerProductos h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C2313;
 }
 
 .producto{
     background-color: #FBFAF6;
     height: auto;
-    width: 265px;
     text-align: center;
+    padding: 10px;
 }
 
 .producto p{
@@ -56,6 +93,133 @@ button{
 }
 
 .contact{
+    align-items: center;
     background-color: #3C2313;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+article div{
+    margin: 5px;
+}
+
+.contact article{
+    display: flex;
+    margin: 15px;
+}
+
+.formSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formSection h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.formSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formSection input{
+    background-color: #3C2313;
+    border-radius: 15px;
+    color: #fff;
+    height: 40px;
+    margin: 5px;
+    padding: 10px 20px;
+    width: 340px;
+}
+
+.formSection .primary{
+    background-color: #F0A83E;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    height: 34px;
+    width: 110px;
+}
+
+.formSection .secundary{
+    background-color: #8A8787;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    height: 34px;
+    width: 110px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.productosDestacados{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+select{
+    background-color: #222222;
+    color: #fff;
+}
+
+.Suscribirme{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.Suscribirme button{
+    background-color: #3C2313;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 9px;
+    font-weight: bold;
+    height: 40px;
+    width: 75px;
+}
+
+.Suscribirme div{
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.Suscribirme input{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    margin: 5px;
+    padding: 15px;
+    width: 346px;
+}
+
+footer{
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    font-style: ;
 }
